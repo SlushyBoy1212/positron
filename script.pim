@@ -8,4 +8,4 @@ def install_pkg(pkg_name: str):
   positron.run(f"chmod +x /positron/modules/{pkg_name}")
 for pkg in positron.listdir("/positron/modules/github.com.SlushyBoy1212.positron.git/"):
   install_pkg(pkg)
-print("Finished!")
+print("Finished! Try running \"user create\" to create a user!")
