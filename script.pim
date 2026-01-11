@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import positron
+print("installing all packages...")
+def install_pkg(pkg_name: str):
+  positron.rename(f"/positron/modules/github.com.SlushyBoy1212.positron.git/{pkg_name}", f"/positron/modules/{pkg_name}")
+  positron.run(f"chmod +x /positron/modules/{pkg_name}")
+install_pkg("sh")
